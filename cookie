@@ -126,7 +126,6 @@ header('location: loguj.php');
 exit;
 }
 $s=session_destroy();
-
 ?>
 <DOCTYPE HTML>
 <html>
