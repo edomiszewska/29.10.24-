@@ -107,3 +107,5 @@ echo "nieprawidlowe dane logowania<br>";
 <input type="password" name="haslo" value="" size="25">
 <input type="submit" value="Zaloguj sie">
 </form>
+</div>
+</body>
