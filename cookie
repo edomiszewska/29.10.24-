@@ -24,7 +24,8 @@ else{
 </body>
 </html>
 ===========================================================================
-
+SESJA
+===========================================================================
 
 session_start();- zeby wlaczyc sesje
 
@@ -37,3 +38,17 @@ $_SESSION['nazwa zmiennej'] = wartość;
 
 
 $zmienna=$_SESSION['nazwa zmiennej'];- do oczytu np wartosci zmiennej.
+
+isset-sprawdza czy zmienna istnieje.
+
+isset($_SESSION['nazwa zmiennej'])
+
+funkcja isset zwraca true jesli zmienna zostala zarejetrowana, w przeciwnym razie false.
+
+----------------------------------------------------
+session_unset(); - wszystkie zmienne z sesji usuwa.
+
+Unset($_SESSION['nazwa zmiennej']); - usuwa podaną zmienną (ktora chcemy usunac, np haslo).
+----------------------------------------------------
+
+
