@@ -24,3 +24,16 @@ else{
 </body>
 </html>
 ===========================================================================
+
+
+session_start();- zeby wlaczyc sesje
+
+i
+
+session_destroy(); - wszystko znika
+
+
+$_SESSION['nazwa zmiennej'] = wartość;
+
+
+$zmienna=$_SESSION['nazwa zmiennej'];- do oczytu np wartosci zmiennej.
