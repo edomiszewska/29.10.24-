@@ -1,0 +1,26 @@
+===========================================================================
+PRZYKLAD Z TYM KIEDY OSTATNIO ODWIEDZILES STRONE I WYSWIETLANIEM KOMUNIKATOW
+
+<?php
+$czas=date("Y-m-d G:i:s");
+setcookie("wizyta",$czas, time()+3600);
+?>
+
+<html>
+  <body>
+  <?php 
+  if (isset($_COOKIE['wizyta']))
+  {
+  $ostatnia=$_COOKIE['wizyta'];
+  echo "Witamy ponownie!<br> Ostatni raz odwiedziles nas: ".$ostatnia;
+  
+  }
+else{
+"Witamy na naszej stronie!";
+}
+
+?>
+<p><strong>Uwaga: </strong>Potrzebne moze byc odswiezanie strony.</p>
+</body>
+</html>
+===========================================================================
