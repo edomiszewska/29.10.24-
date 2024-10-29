@@ -138,3 +138,73 @@ $s=session_destroy();
 <a href="lohuj.php">Logowanie</a>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+-------------------------------------------
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>koszyk</title>
+</head>
+<body>
+    
+<form action="wynik.php" method="post">
+ 
+   
+    <label for="kosz">KOSZYK ZAKUPOWY<br>
+        <input type="checkbox" value="dyson" id="dyson" name="koszyk">dyson<br>
+        <input type="checkbox" value="banan" id="banan" name="koszyk">banan<br>
+        <input type="checkbox" value="jabłko" id="jabłko" name="koszyk">jabłko<br>
+        <input type="checkbox" value="clinique" id="clinique" name="koszyk">clinique<br>
+        <input type="checkbox" value="volvo xc90" id="volvo xc90" name="koszyk">volvo xc90 (W GRATISIE DYSON!!)<br>
+    </label><br>
+      
+       <input type="submit" name="przeslij"><br>
+</form>
+<p id="wynik"> </p>
+
+
+
+</body>
+</html>
+------------------------------------------------------
+<?php
+
+if(isset($_POST['przeslij'])){
+    $imie=$_POST['imie'];
+    $kto=$_POST ['kto'];
+    $szkola=$_POST['szkola'];
+    
+
+
+
+
+    if(isset($_POST['pelnoletni'])){
+        $pelnoletni='pełnoletni';
+
+        
+    }else{
+            $pelnoletni="niepełnoletni";
+        }
+
+
+}
+echo 
+"Witaj $imie<br>
+Jesteś $kto w $szkola. <br>
+Z formularza wynika, że jesteś $pelnoletni. "
+
+?>
