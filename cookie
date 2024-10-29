@@ -127,3 +127,15 @@ exit;
 }
 $s=session_destroy();
 
+?>
+<DOCTYPE HTML>
+<html>
+<head>
+<title>Koniec sesji</title>
+<meta charset="UTF-8">
+</head>
+<body>
+<p>Wylogowales sie ze strony</p>
+<a href="lohuj.php">Logowanie</a>
+</body>
+</html>
