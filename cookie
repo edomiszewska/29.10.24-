@@ -97,4 +97,13 @@ else
 echo "nieprawidlowe dane logowania<br>";
 }
 
-
+<body>
+<div>
+<form action="loguj.php" method="post">
+<p id="log">Logowanie</p>
+<p class="fo">Nazwa uzytkownika:</p>
+<input type="text" name="nazwa" value=""size="25"><br>
+<p class="fo">Haslo</p>
+<input type="password" name="haslo" value="" size="25">
+<input type="submit" value="Zaloguj sie">
+</form>
